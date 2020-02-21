@@ -11,13 +11,13 @@ function output(){
 	
 	if (!LN||!FN||!G||!EA||!O||!D||!DD||!RD)
 	{
-		document.getElementById("display").innerHTML="Please Fill in All the Required Data Entries!";
+		alert("Please Fill in All the Required Data Entries!");
 	}
 	else if (!EA.includes("@")){
-		document.getElementById("display").innerHTML="Invalid Email!";
+		alert("Invalid Email!");
 	}
 	else if (DD>=RD){
-		document.getElementById("display").innerHTML="Date Invalid";
+		alert("Date Invalid");
 	}
 	else{
 		document.getElementById("display").innerHTML="NAME: "+FN+" "+LN+"<br>Gender:"+G+" <br>Email Address:"+EA+"<br>DESTINATION: "+D+"<br>ORIGIN: "+O+"<br>Departure Date:"+DD+"<br>Return Date:"+RD+"";
